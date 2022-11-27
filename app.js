@@ -3,8 +3,10 @@ const express = require('express');
 
 const app = express();
 
+
 app.get('/',(request, response) => {
-    return response.json({message: 'Server ir up'});
+    //return response.json({message: 'Server ir up'});
+    response.render("index");
 })
 
 app.listen(3333)
