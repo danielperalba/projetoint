@@ -2,32 +2,68 @@
 
 body
 {
+    background-image: url('fundoimg.jpg');
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
+    
+    color: white;
+    padding: 15px;
 }
 
 body* {
     box-sizing: border-box;    
 }
 
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+
+#logo
+{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li
+{
+    display: inline-block;
+    margin: 20px;
+}
+
+a
+{
+    color: white;
+}
+
+a:hover
+{
+    color: rgb(144, 24, 214);
+    transition: 0.3s all;
+}
+
+h1
+{
+    font-weight: 200;
+}
+
+
+
 .main-login
 {
-    width: 100vw;
-    height: 100vh;
-    background: rgb(14, 14, 15);
+    width: 99vw;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.menubar
-{
-    width: 100vw;
-    height: 6vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background:rgb(0, 0, 0);
-    
+    margin-top: 120px;
 }
 
 .center-login
@@ -38,6 +74,7 @@ body* {
     justify-content: center;
     align-items: center;
 }
+
 .card-login
 {
     width: 60%;
@@ -46,10 +83,12 @@ body* {
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
-    background: #2f2841;
+    background: #1c1828;
     border-radius: 20px;
     box-shadow: 0px 10px 40px #00000056;
+    
 }
+
 .card-login > h1 
 {
     color:#6247e6;
@@ -114,6 +153,7 @@ body* {
     transform: translateY(-7px);
     box-shadow: 0px, 10px, 25px;
 }
+
 
 
 
